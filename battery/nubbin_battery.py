@@ -7,6 +7,6 @@ class NubbinBattery(Battery):
         super().__init__(last_serviced_date)
         self.last_serviced_date = last_serviced_date
     def battery_should_be_serviced(self):
-        serviced_date = self.last_serviced_date.replace(year=datetime.today().year + 4)
+        serviced_date = self.last_serviced_date.replace(year=self.last_serviced_date.year + 4)
         return serviced_date < datetime.today().date()
         
