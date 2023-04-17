@@ -2,7 +2,7 @@ from abc import ABC
 
 
 class Car(ABC):
-    def __int__(self, engine, battery):
+    def __init__(self, engine, battery):
         self.engine = engine
         self.battery = battery
     def need_service(self):

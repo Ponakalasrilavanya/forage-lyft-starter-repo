@@ -3,7 +3,7 @@ from datetime import datetime
 
 
 class NubbinBattery(Battery):
-    def __int__(self, last_serviced_date):
+    def __init__(self, last_serviced_date):
         super().__init__(last_serviced_date)
         self.last_serviced_date = last_serviced_date
     def battery_should_be_serviced(self):

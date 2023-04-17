@@ -2,7 +2,7 @@ from abc import ABC, abstractmethod
 
 
 class Battery(ABC):
-    def __int__(self, last_serviced_date):
+    def __init__(self, last_serviced_date):
         self.last_serviced_date = last_serviced_date
 
     @abstractmethod
